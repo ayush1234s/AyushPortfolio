@@ -21,9 +21,9 @@ function SocialLinks({
   // Replace these with your real profiles
   const links = [
     { href: "https://github.com/ayush1234s", label: "GitHub", Icon: Github },
-    { href: "https://www.linkedin.com/", label: "LinkedIn", Icon: Linkedin },
-    { href: "https://www.instagram.com/", label: "Instagram", Icon: Instagram },
-    { href: "mailto:hello@example.com", label: "Email", Icon: Mail },
+    { href: "https://www.linkedin.com/in/ayushsrivastava06", label: "LinkedIn", Icon: Linkedin },
+    { href: "https://www.instagram.com/ayushsrivasta.va", label: "Instagram", Icon: Instagram },
+    { href: "mailto:ayushoffice3@gmail.com", label: "Email", Icon: Mail },
   ]
   return (
     <div className={`flex items-center gap-3 ${className}`}>

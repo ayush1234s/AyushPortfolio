@@ -44,7 +44,7 @@ export default function HomePage() {
                   View my Projects
                 </Link>
                 <a
-                  href="https://www.linkedin.com/"
+                  href="https://www.linkedin.com/in/ayushsrivastava06"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-lg border border-neutral-300 bg-white px-5 py-3 text-sm font-medium text-neutral-900 hover:bg-neutral-50"
@@ -179,7 +179,7 @@ export default function HomePage() {
                 Contact Me
               </Link>
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/ayushsrivastava06"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-lg border border-neutral-300 bg-white px-5 py-3 text-sm font-medium text-neutral-900 hover:bg-neutral-50"

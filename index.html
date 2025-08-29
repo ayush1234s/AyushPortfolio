@@ -263,7 +263,7 @@
                         <h3 class="text-xl font-semibold mb-3 text-white font-display">React</h3>
                         <p class="text-white/80">Building interactive UIs with some basic React projects under development.</p>
                         <div class="mt-4 bg-white/20 rounded-full h-2">
-                            <div class="bg-gradient-to-r from-blue-400 to-cyan-400 h-2 rounded-full w-1/2"></div>
+                            <div class="bg-gradient-to-r from-blue-400 to-cyan-400 h-2 rounded-full w-3/4"></div>
                         </div>
                         <p class="text-xs text-white/60 mt-2">Intermediate Level</p>
                     </div>
@@ -432,7 +432,7 @@
                         </div>
                         <div class="lg:w-2/3">
                             <h4 class="text-2xl font-bold mb-4 text-white font-display">Skill Rathi</h4>
-                            <p class="text-white/80 mb-6 text-lg">A comprehensive e-learning platform for course creation and sales. Built with modern frontend frameworks featuring responsive design, course management, and payment integration.</p>
+                            <p class="text-white/80 mb-6 text-lg">A comprehensive Startup e-learning platform for course creation and sales. Built with modern frontend frameworks featuring responsive design, course management, and payment integration.</p>
                             <div class="flex flex-wrap gap-4">
                                 <a href="https://github.com/ayush1234s/SkillRathi" target="_blank" class="bg-gray-800 hover:bg-gray-700 text-white px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 flex items-center">
                                     <i class="fab fa-github mr-2"></i>View Code
@@ -494,12 +494,12 @@
                             <h4 class="text-2xl font-bold mb-4 text-white font-display">Hangman Game</h4>
                             <p class="text-white/80 mb-6 text-lg">A classic word guessing game built with React. Guess the word letter by letter before the hangman is complete! Features multiple difficulty levels and score tracking.</p>
                             <div class="flex flex-wrap gap-4">
-                                <span class="bg-gray-600 text-white px-6 py-3 rounded-full flex items-center opacity-60">
-                                    <i class="fab fa-github mr-2"></i>Coming Soon
-                                </span>
-                                <span class="bg-gray-600 text-white px-6 py-3 rounded-full flex items-center opacity-60">
-                                    <i class="fas fa-external-link-alt mr-2"></i>In Development
-                                </span>
+                                <a href="https://github.com/ayush1234s/HangManGameReact" target="_blank" class="bg-gray-800 hover:bg-gray-700 text-white px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 flex items-center">
+                                    <i class="fab fa-github mr-2"></i>View Code
+                                </a>
+                                <a href="https://reacthang.netlify.app" target="_blank" class="bg-primary hover:bg-secondary text-white px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 flex items-center">
+                                    <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -584,76 +584,13 @@
             </div>
             <div class="border-t border-white/20 pt-6">
                 <p class="mb-2 text-white/80">© 2025 Ayush Srivastava. All rights reserved.</p>
-                <p class="text-white/60">Crafted with ❤️ and modern web technologies</p>
+                <p class="text-white/60">Made By Ayush Srivastava</p>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Section navigation
-        const navLinks = document.querySelectorAll('.nav-link');
-        const sections = ['home', 'projects', 'contact'];
-        
-        function showSection(sectionId) {
-            sections.forEach(section => {
-                const element = document.getElementById(section);
-                if (section === sectionId) {
-                    element.classList.remove('hidden');
-                } else {
-                    element.classList.add('hidden');
-                }
-            });
-            
-            // Close mobile menu
-            mobileMenu.classList.add('hidden');
-        }
-        
-        navLinks.forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const targetSection = link.getAttribute('href').substring(1);
-                showSection(targetSection);
-                
-                // Update active nav link
-                navLinks.forEach(navLink => navLink.classList.remove('text-primary', 'font-semibold'));
-                link.classList.add('text-primary', 'font-semibold');
-            });
-        });
-        
-        // Smooth scrolling for internal links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                showSection(targetId);
-            });
-        });
-        
-        // Form submission feedback
-        const contactForm = document.querySelector('form');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
-                const submitBtn = this.querySelector('button[type="submit"]');
-                submitBtn.textContent = 'Sending...';
-                submitBtn.disabled = true;
-                
-                setTimeout(() => {
-                    submitBtn.textContent = 'Send Message';
-                    submitBtn.disabled = false;
-                }, 2000);
-            });
-        }
-        
-        // Initialize with home section
-        showSection('home');
+    <script src="assets/app.js">
+       
     </script>
 </body>
 </html>
